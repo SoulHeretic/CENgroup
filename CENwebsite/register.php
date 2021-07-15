@@ -8,6 +8,7 @@ include 'connection.php';
 <div>
 <table>
 <center>
+<h1>Register for a Author account</h1>
 <form action="registeraction.php" method="post">
   <label for="FirstName">First Name</label><br>
   <input type="text" id="FirstName" name="FirstName"><br>
@@ -53,9 +54,12 @@ include 'connection.php';
 </form>
 </center>
 </table>
-
+</br>
+</br>
+</br>
 <table>
 <center>
+<h1>Register for a reviewer account</h1>
 <form action="registeraction2.php" method="post">
   <label for="FirstName">First Name</label><br>
   <input type="text" id="FirstName" name="FirstName"><br>

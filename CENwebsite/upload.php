@@ -55,11 +55,11 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert file name into database
-            $query = ("Insert INTO [CPMS].[dbo].[Paper] (Title,Certification,NotesToReviewers,AnalysisOfAlgorithms,Applications,Architecture,ArtificialIntelligence,ComputerEngineering,Curriculum,DataStructures
+            $query = ("Insert INTO [CPMS].[dbo].[Paper] (Filename,Title,Certification,NotesToReviewers,AnalysisOfAlgorithms,Applications,Architecture,ArtificialIntelligence,ComputerEngineering,Curriculum,DataStructures
 ,Databases,DistanceLearning,DistributedSystems,EthicalSocietalIssues,FirstYearComputing,GenderIssues,GrantWriting,GraphicsImageProcessing,HumanComputerInteraction
 ,LaboratoryEnvironments,Literacy,MathematicsInComputing,Multimedia,NetworkingDataCommunications,NonMajorCourses,ObjectOrientedIssues,OperatingSystems,ParallelsProcessing
 ,Pedagogy,ProgrammingLanguages,Research,Security,SoftwareEngineering,SystemsAnalysisAndDesign,UsingTechnologyInTheClassroom,WebAndInternetProgramming,Other,OtherDescription)Values
-('{$Title}','{$Certification}','{$NotesToReviewers}','{$AnalysisOfAlgorithms}','{$Applications}','{$Architecture}',
+('{$Filename}','{$Title}','{$Certification}','{$NotesToReviewers}','{$AnalysisOfAlgorithms}','{$Applications}','{$Architecture}',
 '{$ArtificialIntelligence}','{$ComputerEngineering}','{$Curriculum}','{$DataStructures}','{$Databases}','{$DistanceLearning}','{$DistributedSystems}','{$EthicalSocietalIssues}',
 '{$FirstYearComputing}','{$GenderIssues}','{$GrantWriting}','{$GraphicsImageProcessing}','{$HumanComputerInteraction}','{$LaboratoryEnvironments}','{$Literacy}','{$MathematicsInComputing}',
 '{$Multimedia}','{$NetworkingDataCommunications}','{$NonMajorCourses}','{$ObjectOrientedIssues}','{$OperatingSystems}','{$ParallelsProcessing}','{$Pedagogy}','{$ProgrammingLanguages}',

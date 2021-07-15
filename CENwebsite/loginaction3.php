@@ -10,7 +10,7 @@ $EmailAddress = ($_POST['EmailAddress']);
 $Password = ($_POST['Password']);
 
 #searches for EmailAddress and password in the database
-$query = "SELECT * FROM [CPMS].[dbo].[Author] WHERE EmailAddress = '{$EmailAddress}' AND Password='{$Password}'";
+$query = "SELECT * FROM [CPMS].[dbo].[Admin] WHERE EmailAddress = '{$EmailAddress}' AND Password='{$Password}'";
 
 
 $result = sqlsrv_query($conn, $query);  
@@ -28,7 +28,7 @@ if(sqlsrv_has_rows($result) != 1){
 
 #creates sessions
 while($row = sqlsrv_fetch_array($result)){
-   $_SESSION['AuthorID'] = $row['AuthorID'];
+   $_SESSION['AdminID'] = $row['AdminID'];
    $_SESSION['FirstName'] = $row['FirstName'];
    $_SESSION['MiddleInitial'] = $row['MiddleInitial'];
    $_SESSION['LastName'] = $row['LastName'];
@@ -43,6 +43,8 @@ while($row = sqlsrv_fetch_array($result)){
    $_SESSION['Password'] = $row['Password'];
 }
    $_SESSION['log'] = 1;
+   $_SESSION['logg'] = 2;
+   $_SESSION['loggg'] = 3;
 #redirects user
 header("Location: homepage.php");
 }

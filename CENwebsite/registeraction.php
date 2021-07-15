@@ -1,6 +1,6 @@
 <?php
 
-#starts a new session. This is a reviewer registration form.
+#starts a new session. This is a author registration form.
 session_start();
 
 include 'connection.php';

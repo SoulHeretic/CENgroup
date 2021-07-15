@@ -2,27 +2,40 @@
 
 include 'Template.php';
 include 'connection.php';
+if($_SESSION['logg'] != 2)
+		{
+			header("location:homepage.php"); 
+		}
 
-<div class="content">
+?>
+
+<div class= "content">
 <div>
 
-
+<?php 	/*
 //Get images from the database
 $_SESSION['AuthorID']
-$query = "SELECT * FROM [CPMS].[dbo].[Reviewer] WHERE PaperID = '{$EmailAddress}' AND Password='{$Password}'";
 
-if($query->num_rows > 0){
-    while($row = $query->fetch_assoc()){
-        $imageURL = 'uploads/'.$row["file_name"];
-?>
-    <img src="<?php echo $imageURL; ?>" alt="" />}
-}else{ ?>
-    <p>No image(s) found...</p>
-} ?>
+$query = "SELECT * FROM [CPMS].[dbo].[Review] WHERE ReviewerID = $_SESSION['ReviewerID'] AND PaperID = '{$PaperID}'";
+$result = sqlsrv_query($conn, $query);  
 
+if ($handle = opendir('/uploads/')) {
+    while (false !== ($entry = readdir($handle))) {
+        if ($entry != "." && $entry != "..") {
+            echo "<a href='download.php?file=".$entry."'>".$entry."</a>\n";
+        }
+    }
+    closedir($handle);
+
+*/?>
+<a href="/Uploads/file.pdf" download>
+Download you paper to review here.
+</a>
 
 <table>
 <center>
+Information on your paper below submitting here please. Filling in the correct information will make reviews easier. If you paper does not fit into a category leave it as 0, otherwise put in a 1.
+
 <form>
   <label for="AppropriatenessOfTopic">Appropriateness Of Topic</label><br>
   <input type="text" id="AppropriatenessOfTopic" name="AppropriatenessOfTopic"><br>
