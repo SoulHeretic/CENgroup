@@ -21,7 +21,7 @@ include 'connection.php';
 				<p>Your account details are below:</p>	<!-- Some info given to the users by calling session variables loated in loginaction.php.-->
 				<table>
 					<tr>
-						<td>FirstName:</td>
+						<td>First Name:</td>
 						<td><?=$_SESSION['FirstName']?></td>
 					</tr>
 					<tr>

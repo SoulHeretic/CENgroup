@@ -22,22 +22,22 @@ include 'connection.php';
 </br>
 <center>
 <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select Paper to Upload:
+    Select paper to upload at the bottom of this page:
 	</br>
 	</br>
 	</br>
-	Information on your paper below submitting here please. Filling in the correct information will make reviews easier. If you paper does not fit into a category leave it as 0, otherwise
-	put in a 1.
+	Please read the following before submitting your paper. Filling in the correct information will make reviews easier. If your paper does not fit into a category leave it as 0, otherwise
+	put in a 1. <br>If the text above an entry specifies that the input should be text, type your text in that entry instead of 0 or 1.
 	</br>
 	</br>
 	</br>
-	<label for="Title">Title</label><br>
+	<label for="Title">Title<strong> (Text)</strong></label><br>
     <input type="text" id="Title" name="Title"><br>
   
-    <label for="NotesToReviewers">NotesToReviewers</label><br>
+    <label for="NotesToReviewers">NotesToReviewers<strong> (Text)</strong></label><br>
     <input type="text" id="NotesToReviewers" name="NotesToReviewers"><br>
 	
-	<label for="Certification">Certification</label><br>
+	<label for="Certification">Certification<strong> (Text)</strong></label><br>
     <input type="text" id="Certification" name="Certification"><br>
   
     <label for="AnalysisOfAlgorithms">Analysis Of Algorithms</label><br>
@@ -142,7 +142,7 @@ include 'connection.php';
     <label for="Other">Other</label><br>
     <input type="text" id="Other" name="Other" ><br>
 	
-	<label for="OtherDescription">Other Description</label><br>
+	<label for="OtherDescription">Other Description<strong> (Text)</strong></label><br>
     <input type="text" id="OtherDescription" name="OtherDescription" ><br>
 	
 	<br>

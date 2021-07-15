@@ -4,8 +4,8 @@ if(!isset($_SESSION)){
  session_start();
 }
 
-$serverName = "DESKTOP-HPTG6RE";
-$connectionInfo = array("Database" => "CENproject");
+$serverName = "DESKTOP-47P2A34";
+$connectionInfo = array("Database" => "CPMS");
 $conn = sqlsrv_connect($serverName,$connectionInfo);	//Setting up for a database connection for sql server
 
 

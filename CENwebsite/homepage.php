@@ -20,7 +20,7 @@ include 'connection.php';
 <body>
 <p>
 <h1>Homepage</h1>
-"Welcome. The purpose of this website is speedily process the submission of papers, as well as speed up the process of reviews."
+"Welcome. The purpose of this website is to speedily process the submission of papers, as well as speed up the process of reviews."
 </p>
 </body>
 <div id = "footer">

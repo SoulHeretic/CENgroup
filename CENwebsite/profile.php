@@ -29,7 +29,7 @@ if($_SESSION['logg'] == 2)
 				<p>Your account details are below:</p>
 				<table>
 					<tr>
-						<td>FirstName:</td>
+						<td>First Name:</td>
 						<td><?=$_SESSION['FirstName']?></td>
 					</tr>
 					<tr>

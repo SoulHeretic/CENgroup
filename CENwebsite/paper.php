@@ -22,19 +22,26 @@ $result = sqlsrv_query($conn, $query);
 if ($handle = opendir('/uploads/')) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            echo "<a href='download.php?file=".$entry."'>".$entry."</a>\n";
+            echo "<a href='downloads.php?file=".$entry."'>".$entry."</a>\n";
         }
     }
     closedir($handle);
 
 */?>
 <a href="/Uploads/file.pdf" download>
-Download you paper to review here.
+<center>
+Download your paper to review here.
+<br>
+<br>
 </a>
 
 <table>
-<center>
-Information on your paper below submitting here please. Filling in the correct information will make reviews easier. If you paper does not fit into a category leave it as 0, otherwise put in a 1.
+Please read the following before reviewing your paper. Filling in the correct information will make reviews easier. If the text above an entry specifies that it is for comments, type your comment in that entry. If the text specifies that the input should be 0 or 1, only input those values (0 = False, 1 = True). Otherwise, every input is a rating from 1 to 5 with the legend shown below.
+<br>
+<br>
+<strong>Rating: 1 - Poor, 2 - Fair, 3 - Average, 4 - Good, 5 - Excellent</strong>
+<br>
+<br>
 
 <form>
   <label for="AppropriatenessOfTopic">Appropriateness Of Topic</label><br>
@@ -58,7 +65,7 @@ Information on your paper below submitting here please. Filling in the correct i
   <label for="Originality">Originality</label><br>
   <input type="text" id="Originality" name="Originality" ><br>
   
-  <label for="ContentComments">Content Comments</label><br>
+  <label for="ContentComments">Content Comments<strong> (Comment)</strong></label><br>
   <input type="text" id="ContentComments" name="ContentComments" ><br>
   
   <label for="OrganizationPaper">Organization Paper:</label><br>
@@ -70,7 +77,7 @@ Information on your paper below submitting here please. Filling in the correct i
   <label for="Mechanics">Mechanics</label><br>
   <input type="text" id="Mechanics" name="Mechanics" ><br>
   
-  <label for="WrittenDocumentComments">Written Document Comments</label><br>
+  <label for="WrittenDocumentComments">Written Document Comments<strong> (Comment)</strong></label><br>
   <input type="text" id="WrittenDocumentComments" name="WrittenDocumentComments" ><br>
   
   <label for="SuitabilityForPresentation">Suitability For Presentation</label><br>
@@ -79,13 +86,13 @@ Information on your paper below submitting here please. Filling in the correct i
   <label for="PotentialInterestInTopic">Potential Interest In Topic:</label><br>
   <input type="text" id="PotentialInterestInTopic" name="PotentialInterestInTopic" ><br>
   
-  <label for="PotentialForORalPresentationComments">Potential For Oral Presentation Comments</label><br>
+  <label for="PotentialForORalPresentationComments">Potential For Oral Presentation Comments<strong> (Comment)</strong></label><br>
   <input type="text" id="PotentialForORalPresentationComments" name="PotentialForORalPresentationComments" ><br>
   
   <label for="OverallRating">Overall Rating</label><br>
   <input type="text" id="OverallRating" name="OverallRating" ><br>
   
-  <label for="OverallRatingComments">Overall Rating Comments</label><br>
+  <label for="OverallRatingComments">Overall Rating Comments<strong> (Comment)</strong></label><br>
   <input type="text" id="OverallRatingComments" name="OverallRatingComments" ><br>
   
   <label for="ComfortLevelTopic">Comfort Level Topic</label><br>
@@ -94,7 +101,7 @@ Information on your paper below submitting here please. Filling in the correct i
   <label for="ComfortLevelAcceptability">Comfort Level Acceptability</label><br>
   <input type="text" id="ComfortLevelAcceptability" name="ComfortLevelAcceptability" ><br>
   
-  <label for="Complete">Complete</label><br>
+  <label for="Complete">Complete<strong> (0/1)</strong></label><br>
   <input type="text" id="Complete" name="Complete" ><br>
   
   <input type="submit" value="Submit">

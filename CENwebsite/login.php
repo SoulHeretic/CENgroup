@@ -48,7 +48,7 @@ include 'template.php';
 				<input type="submit" value="Login">
 			</form>
 		</div>
-		<a href="forgotpassword2.php">Forgot your Author account password? Click Here.</a> <!-- Password Recovery Link.-->
+		<a href="forgotpassword2.php">Forgot your Reviewer account password? Click Here.</a> <!-- Password Recovery Link.-->
 		
 	</br>
 	</br>
@@ -67,7 +67,7 @@ include 'template.php';
 				<input type="submit" value="Login">
 			</form>
 		</div>
-		<a href="forgotpassword3.php">Forgot your Author account password? Click Here.</a>	<!-- Password Recovery Link.-->
+		<a href="forgotpassword3.php">Forgot your Admin account password? Click Here.</a>	<!-- Password Recovery Link.-->
 		
 		</br>
 		</br>

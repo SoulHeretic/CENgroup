@@ -8,7 +8,7 @@ include 'connection.php';
 <div>
 <table>
 <center>
-<h1>Register for a Author account</h1>
+<h1>Register for an Author account</h1>
 <form action="registeraction.php" method="post">
   <label for="FirstName">First Name</label><br>
   <input type="text" id="FirstName" name="FirstName"><br>
@@ -40,14 +40,11 @@ include 'connection.php';
   <label for="PhoneNumber">Phone Number</label><br>
   <input type="text" id="PhoneNumber" name="PhoneNumber" ><br>
   
-  <label for="ZipCode">Zip Code</label><br>
-  <input type="text" id="ZipCode" name="ZipCode" ><br>
-  
   <label for="EmailAddress">Email Address</label><br>
   <input type="text" id="EmailAddress" name="EmailAddress" ><br>
   
   <label for="Password">Password</label><br>
-  <input type="text" id="Password" name="Password" ><br>
+  <input type="text" id="Password" name="Password" ><br><br>
   
   <input type="submit" value="Submit">
   
@@ -59,7 +56,7 @@ include 'connection.php';
 </br>
 <table>
 <center>
-<h1>Register for a reviewer account</h1>
+<h1>Register for a Reviewer account</h1>
 <form action="registeraction2.php" method="post">
   <label for="FirstName">First Name</label><br>
   <input type="text" id="FirstName" name="FirstName"><br>
@@ -90,9 +87,6 @@ include 'connection.php';
   
   <label for="PhoneNumber">Phone Number</label><br>
   <input type="text" id="PhoneNumber" name="PhoneNumber" ><br>
-  
-  <label for="ZipCode">Zip Code</label><br>
-  <input type="text" id="ZipCode" name="ZipCode" ><br>
   
   <label for="EmailAddress">Email Address</label><br>
   <input type="text" id="EmailAddress" name="EmailAddress" ><br>
@@ -203,7 +197,7 @@ include 'connection.php';
 <input type="text" id="OtherDescription" name="OtherDescription" ><br>
 
 <label for="ReviewsAcknowledged">ReviewsAcknowledged</label><br>
-<input type="text" id="ReviewsAcknowledged" name="ReviewsAcknowledged" ><br>
+<input type="text" id="ReviewsAcknowledged" name="ReviewsAcknowledged" ><br><br>
   
   <input type="submit" value="Submit">
   

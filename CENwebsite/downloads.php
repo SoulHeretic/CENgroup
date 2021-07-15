@@ -1,4 +1,4 @@
-<?php include 'filesLogic.php';?>
+<?php include 'filelogic.php';?>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -11,7 +11,7 @@
 <thead>
     <th>ID</th>
     <th>Filename</th>
-    <th>size (in mb)</th>
+    <th>Size (in mb)</th>
     <th>Downloads</th>
     <th>Action</th>
 </thead>
